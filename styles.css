@@ -34,9 +34,15 @@
   }
 
   nav .logo {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: bold;
-    color: #00d1b2;
+    color: white;
+  }
+
+  nav span {
+    font-size: 1em;
+    font-weight: bold;
+    color: #d10000;
   }
 
   nav ul {
@@ -46,20 +52,44 @@
   }
 
   h1 span {
-    color: #00d1b2;       /* change color */
+    color: #d10000;       /* change color */
     font-weight: bold;    /* make it bold */
     font-style: italic;   /* optional */
   }
 
   nav ul li a {
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.675);
     transition: color 0.3s ease;
+    color: #ffffff8d;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease-in-out;
+    position: relative;
   }
 
   nav ul li a:hover {
-    color: #00d1b2;
+    color: white;
   }
+
+
+
+  /* Underline effect */
+.unli li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  background-color: #d10000;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.unli li a:hover::after {
+  width: 100%;
+  left: 0;
+}
 
   #home {
     position: relative;
@@ -143,7 +173,7 @@
   }
   
   .social-icons a:hover {
-    color: #00d1b2; /* or any highlight color */
+    color: #d10000; /* or any highlight color */
     transform: scale(1.2);
   }
   
