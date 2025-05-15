@@ -137,13 +137,57 @@
 
   
   
-  .profile-image img {
-    width: 350px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 100%; /* ← for circle shape, use 0 for square */
-    border: 4px solid rgba(45, 45, 45, 0.089);
+  .profile-image {
+    position: relative;
+    width: 320px;
+    height: 380px;
+    margin: 0 auto;
+    z-index: 1;
   }
+  
+  /* Glowing nebula-style red shape */
+  .profile-image::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 370px;
+    height: 420px;
+    background: radial-gradient(circle at 50% 50%, rgba(218, 8, 8, 0.5), transparent 70%);
+    z-index: -1;
+    filter: blur(25px);
+    border-radius: 60% 40% 35% 65% / 60% 30% 70% 40%;
+    transform: rotate(6deg);
+  }
+  
+  /* Subtle white galaxy orb behind or beside */
+  .profile-image::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    right: -50px;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(255,255,255,0.04) 10%, transparent 80%);
+    border-radius: 50%;
+    z-index: -2;
+    filter: blur(10px);
+    transform: rotate(-20deg);
+  }
+  
+  /* Profile image itself */
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40%;
+    /* border: 2px solid rgba(23, 23, 23, 0.1); */
+    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.05); */
+    position: relative;
+    z-index: 2;
+  }
+  
+  
   
   .profile-info {
     color: white;
