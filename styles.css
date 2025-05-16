@@ -238,6 +238,18 @@
 
 
   @media (max-width: 768px) {
+
+    /* Profile image itself */
+  .profile-image img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 40%;
+    /* border: 2px solid rgba(23, 23, 23, 0.1); */
+    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.05); */
+    position: relative;
+    z-index: 2;
+  }
     .profile-container {
       flex-direction: column;
       gap: 40px; /* smaller gap for mobile */
@@ -250,6 +262,23 @@
 
     .social-icons {
       justify-content: center; /* center icons on mobile */
+    }
+
+
+    .profile-info .header1 {
+      color: #d10000;       /* change color */
+      font-weight: bold;
+      font-size: 2em;    /* make it bold */
+    }
+  
+    .profile-info .header2 {
+      color: white;       /* change color */
+      font-size: 1em;    /* make it bold */
+    }
+  
+    .profile-info .position {
+      color: #ffffff;       /* change color */
+      font-size: 1em;    /* make it bold */
     }
   }
 
