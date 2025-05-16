@@ -51,10 +51,20 @@
     gap: 40px;
   }
 
-  h1 span {
+  .profile-info .header1 {
     color: #d10000;       /* change color */
-    font-weight: bold;    /* make it bold */
-    font-style: italic;   /* optional */
+    font-weight: bold;
+    font-size: 3em;    /* make it bold */
+  }
+
+  .profile-info .header2 {
+    color: white;       /* change color */
+    font-size: 1.5em;    /* make it bold */
+  }
+
+  .profile-info .position {
+    color: #ffffff;       /* change color */
+    font-size: 1.5em;    /* make it bold */
   }
 
   nav ul li a {
@@ -153,7 +163,7 @@
     left: -30px;
     width: 370px;
     height: 420px;
-    background: radial-gradient(circle at 50% 50%, rgba(218, 8, 8, 0.5), transparent 70%);
+    background: radial-gradient(circle at 50% 50%, rgba(218, 8, 8, 0.5), transparent 90%);
     z-index: -1;
     filter: blur(25px);
     border-radius: 60% 40% 35% 65% / 60% 30% 70% 40%;
@@ -212,7 +222,11 @@
   
   .social-icons a {
     color: white;
-    font-size: 24px;
+    font-size: 22px;
+    border:1px solid #d10000;
+    box-shadow: 0 0 8px #ec2f2f;
+    border-radius: 100%;
+    padding: 9px;
     transition: color 0.3s ease, transform 0.3s ease;
   }
   
@@ -262,7 +276,13 @@
   }
   
   .section-title {
-    font-size: 2.1rem;
+    font-size: 2.5rem;
+    color: #fdfdfd;
+    margin-bottom: 40px;
+  }
+
+  .section-title span {
+    font-size: 2.5rem;
     color: #d10000;
     margin-bottom: 40px;
   }
@@ -295,7 +315,7 @@
   
   .project-title {
     font-size: 1.1rem;
-    color: white;
+    color: #d10000;
     font-weight: 600;
     margin-bottom: 10px;
   }
@@ -321,19 +341,19 @@
   }
   
   /* Color styles */
-  .badge.html { background: #f33d00; color: #ffffff; }
-  .badge.css { background: #0272da; color: #fcfbfc; }
-  .badge.js { background: #f0db4f; color: #000; }
-  .badge.github { background: #ffffff; color: #000; }
-  .badge.visual { background: #2626e8; color: #f6f4f4; }
-  .badge.canva { background: #cb20e5; color: #f1efef; }
-  .badge.hostinger { background: #80049f; color: #fdfcfc; }
+  .badge.html { background: white; color: black; }
+  .badge.css { background: #d10000; color: #fcfbfc; }
+  .badge.js { background: white; color: #000; }
+  .badge.github { background: #d10000; color: white; }
+  .badge.visual { background: white; color: black; }
+  .badge.canva { background: #d10000; color: #f1efef; }
+  .badge.hostinger { background: white; color: black; }
   
   .github-link {
     display: inline-block;
     margin-top: 10px;
     text-decoration: none;
-    color: #0073e6;
+    color: white;
     font-weight: 500;
   }
   
@@ -348,67 +368,92 @@
 
 
 
-
   #techstack {
     position: relative;
+    padding: 100px 20px;
     color: #fff;
-    padding: 80px 20px;
     text-align: center;
+    overflow: hidden;
   }
   
   #techstack video {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -2;
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  
+  #techstack::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
     z-index: -1;
   }
   
   .tech-stack-content {
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    padding: 40px;
     max-width: 1200px;
     margin: auto;
   }
   
-  .tech-categories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 30px;
+  .tech-title {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+
+  .tech-title span {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    font-weight: bold;
+    color: #d10000;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
   }
   
-  .tech-category {
-    flex: 1 1 250px;
-    max-width: 280px;
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: 20px;
-    border-radius: 15px;
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+    justify-items: center;
   }
   
-  .tech-category h2 {
+  .tech-item {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    padding: 30px 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 100%;
+    max-width: 180px;
+  }
+  
+  .tech-item:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 0 20px rgb(255, 0, 0);
+  }
+  
+  .tech-item img {
+    width: 70px;
+    height: 70px;
     margin-bottom: 15px;
-    font-size: 1.2em;
-    border-bottom: 1px solid #00d1b2;
-    padding-bottom: 5px;
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.319));
   }
   
-  .tech-category img {
-    width: 50px;
-    height: 50px;
-    margin: 8px;
-    object-fit: contain;
-    transition: transform 0.3s ease;
+  .tech-item span {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
   }
   
-  .tech-category img:hover {
-    transform: scale(1.2);
-  }
-
-  
-
-
