@@ -2,7 +2,7 @@
     overflow: hidden;
     position: relative;
     padding: 50px 20px;
-    text-align: center;
+    /* text-align: center; */
   }
 
   #certificates video {
@@ -19,6 +19,7 @@
     font-size: 2.5rem;
     color: #fdfdfd;
     margin-bottom: 40px;
+    text-align: center;
   }
 
   .certificates-section-title span {
@@ -37,7 +38,7 @@
   .certificates-card {
     background-color: transparent;
     border-radius: 20px;
-    padding: 25px;
+    padding: 1px;
     width: 380px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s;
