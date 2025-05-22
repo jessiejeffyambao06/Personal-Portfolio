@@ -51,9 +51,12 @@
     box-shadow: 0 0 20px rgba(28, 161, 250, 0.558);
 
     border-radius: 20px;
-    padding: 40px;
-    width: 500px;
-    height: 590px;
+    padding: 20px;
+    /* width: 500px;
+    height: 590px; */
+
+    width: 35%;
+    height: auto;
     /* box-shadow: 0 4px 12px rgba(255, 255, 255, 0); */
     transition: transform 0.3s;
   }
