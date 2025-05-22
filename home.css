@@ -1,0 +1,168 @@
+#home {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+
+  #home video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  #home .content {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    max-width: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 110px;
+  }
+
+  
+  
+  .profile-image {
+    position: relative;
+    width: 320px;
+    height: 380px;
+    margin: 0 auto;
+    z-index: 1;
+  }
+  
+  /* Glowing nebula-style red shape */
+  .profile-image::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 370px;
+    height: 420px;
+    background: radial-gradient(circle at 50% 50%, rgb(28, 161, 250, 0.5), transparent 90%);
+    z-index: -1;
+    filter: blur(25px);
+    border-radius: 60% 40% 35% 65% / 60% 30% 70% 40%;
+    transform: rotate(6deg);
+  }
+  
+  /* Subtle white galaxy orb behind or beside */
+  .profile-image::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    right: -50px;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(255,255,255,0.04) 10%, transparent 80%);
+    border-radius: 50%;
+    z-index: -2;
+    filter: blur(10px);
+    transform: rotate(-20deg);
+  }
+  
+  /* Profile image itself */
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40%;
+    /* border: 2px solid rgba(23, 23, 23, 0.1); */
+    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.05); */
+    position: relative;
+    z-index: 2;
+  }
+  
+  
+  
+  .profile-info {
+    color: white;
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .profile-info h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .profile-info p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 22px;
+    border:1px solid rgb(28, 161, 250);
+    box-shadow: 0 0 8px rgb(28, 161, 250);
+    border-radius: 100%;
+    padding: 9px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: rgb(28, 161, 250); /* or any highlight color */
+    transform: scale(1.2);
+  }
+  
+
+
+  @media (max-width: 768px) {
+
+    /* Profile image itself */
+  .profile-image img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 40%;
+    /* border: 2px solid rgba(23, 23, 23, 0.1); */
+    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.05); */
+    position: relative;
+    z-index: 2;
+  }
+    .profile-container {
+      flex-direction: column;
+      gap: 40px; /* smaller gap for mobile */
+    }
+  
+    .profile-info {
+      margin-left: 0; /* remove left margin on mobile */
+      text-align: center;
+    }
+
+    .social-icons {
+      justify-content: center; /* center icons on mobile */
+    }
+
+    .profile-info .position {
+      color: #ffffff;       /* change color */
+      font-size: 1em;    /* make it bold */
+    }
+  }
