@@ -10,12 +10,33 @@ body {
   overflow-x: hidden;
 }
 
+
+/* 🔷 Style for background video */
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Para nasa likod ng lahat */
+}
+
+/* 🔷 Optional: para mas visible ang text sa ibabaw ng video */
+
+
 section {
   overflow-x: hidden;
+
+  position: relative;
+  z-index: 1;
+  color: white; /* or depende sa theme mo */
+  padding: 2rem;
+  background-color: rgba(6, 12, 129, 0.184); /* semi-transparent para basahin pa rin */
 }
 
 header {
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(2, 4, 36, 0.984);
   color: white;
   padding: 20px;
   position: fixed;

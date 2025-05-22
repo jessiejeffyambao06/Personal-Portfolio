@@ -14,6 +14,14 @@
     object-fit: cover;
     z-index: -1;
   }
+
+  #projects::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    /* background: rgba(0, 0, 0, 0.7); */
+    z-index: -1;
+  }
   
   .section-title {
     font-size: 2.5rem;
@@ -32,15 +40,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 60px;
   }
   
   .project-card {
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-color: rgba(78, 78, 78, 0.227);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 35px rgba(28, 161, 250, 0.558);
+
     border-radius: 20px;
-    padding: 25px;
-    width: 380px;
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0);
+    padding: 40px;
+    width: 500px;
+    height: 590px;
+    /* box-shadow: 0 4px 12px rgba(255, 255, 255, 0); */
     transition: transform 0.3s;
   }
   
@@ -49,9 +63,10 @@
   }
   
   .project-image {
-    width: 100%;
-    height: 45%;
+    width: 70%;
+    height: 40%;
     border-radius: 12px;
+    margin-left: 70px;
   }
   
   .project-title {
@@ -93,8 +108,48 @@
   
   .github-link {
     display: inline-block;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    padding: 6px 12px;
     text-decoration: none;
     color: white;
     font-weight: 500;
+    border-radius: 20px;
+    background: rgb(28, 161, 250);;
   }
+
+
+
+  /* ✅ RESPONSIVENESS FOR TABLETS & MOBILE */
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .project-card {
+    width: 90%;
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 20px auto;
+    display: block;
+  }
+
+  .section-title, .section-title span {
+    font-size: 2rem;
+  }
+
+  .project-desc {
+    font-size: 0.9rem;
+  }
+
+  .github-link {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

@@ -23,7 +23,7 @@
     position: relative;
     z-index: 1;
     padding: 40px;
-    background: rgba(0, 0, 0, 0.4);
+    /* background: rgba(0, 0, 0, 0.4); */
     border-radius: 10px;
     display: flex;
     justify-content: center;
