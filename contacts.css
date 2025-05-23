@@ -1,0 +1,391 @@
+
+/* Contact Section */
+#contacts {
+    padding: 50px 0;
+    position: relative;
+}
+
+.contact-container {
+    width: 100%;
+    width: 500px;
+    padding: 20px;
+    background: rgba(28, 161, 250, 0.015);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 10px rgba(28, 161, 250, 0.558);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    margin: 50px auto;
+    margin-bottom: 100px;
+
+    opacity: 0;
+    transform: translateX(80px);
+    transition: opacity 1s ease-out, 
+                transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  
+  .contact-container.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+
+.head {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 120px;
+    color: white;
+
+    opacity: 0;
+        transform: translateX(-80px);
+        transition: opacity 1s ease-out, 
+                    transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+      
+      .head.show {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+
+
+.prime {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+
+    opacity: 0;
+    transform: translateX(80px);
+    transition: opacity 1s ease-out, 
+                transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  
+    .prime.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+
+.content {
+    position: relative;
+}
+.container {
+    position: relative;
+    display: flex;
+}
+.contactinfo {
+    margin-left: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add spacing between Address and WhatsApp sections */
+
+
+    opacity: 0;
+        transform: translateX(-80px);
+        transition: opacity 1s ease-out, 
+                    transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+      
+      .contactinfo.show {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+
+
+.container .contactinfo .box {
+    position: relative;
+    display: flex;
+    align-items: center; /* Vertically align icon and text */
+    gap: 15px; /* Add spacing between icon and text */
+    padding: 15px 0;
+    width: 100%; /* Ensure the box takes up the full width */
+}
+
+.contactinfo .text {
+    color: white;
+    flex-grow: 1; /* Ensure text takes up remaining space */
+    text-align: left; /* Align text to the left */
+    line-height: 1.4; /* Improve readability */
+    font-size: 1rem; /* Consistent font size */
+}
+
+
+.container .contactinfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    background: white;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+
+.contact-container h2 {
+    margin-bottom: 15px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(28, 161, 250, 0.015);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 5px rgba(28, 161, 250, 0.558);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    /* background: #007bff; */
+     background: rgba(28, 161, 250, 0.015);
+      backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 10px rgba(28, 161, 250, 0.558);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #227fe3;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    height: 15px;
+    display: block;
+}
+
+.hidden {
+    display: none;
+    color: green;
+    font-weight: bold;
+}
+
+/*  Responsive Design */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .contact-container {
+        width: 90%;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactinfo {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .container .contactinfo .box {
+        display: flex;
+        align-items: center; /* Ensures vertical alignment */
+        justify-content: start;
+        gap: 12px; /* Adds consistent spacing */
+        padding: 10px 0;
+    }
+
+    .container .contactinfo .box .icon {
+        min-width: 50px;
+        height: 50px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: white;
+        flex-shrink: 0; /* Prevents resizing */
+    }
+
+    .container .contactinfo .box .text {
+        flex-grow: 1;
+        text-align: left;
+        line-height: 1.4; /* Improves text readability */
+    }
+}
+
+/*  Small Phones (max-width: 480px) */
+@media (max-width: 768px) {
+    .contact-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .contact-container h2 {
+        font-size: 1.3rem;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        font-size: 13px;
+    }
+
+    .contactinfo {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .container .contactinfo .box {
+        display: flex;
+        align-items: center; /* Ensures vertical alignment */
+        justify-content: start;
+        gap: 12px; /* Adds consistent spacing */
+        padding: 10px 0;
+    }
+
+    .container .contactinfo .box .icon {
+        min-width: 50px;
+        height: 50px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: white;
+        flex-shrink: 0; /* Prevents resizing */
+    }
+
+    .container .contactinfo .box .text {
+        flex-grow: 1;
+        text-align: left;
+        line-height: 1.4; /* Improves text readability */
+    }
+}
+
+
+/*  Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .contact-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .contact-container h2 {
+        font-size: 1.3rem;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        font-size: 13px;
+    }
+
+    .contactinfo {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .container .contactinfo .box {
+        display: flex;
+        align-items: center; /* Ensures vertical alignment */
+        justify-content: start;
+        gap: 12px; /* Adds consistent spacing */
+        padding: 10px 0;
+    }
+
+    .container .contactinfo .box .icon {
+        min-width: 50px;
+        height: 50px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: white;
+        flex-shrink: 0; /* Prevents resizing */
+    }
+
+    .container .contactinfo .box .text {
+        flex-grow: 1;
+        text-align: left;
+        line-height: 1.4; /* Improves text readability */
+    }
+}
+
+
+/*  Small Phones (max-width: 480px) */
+@media (max-width: 375px) {
+    .contact-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .contact-container h2 {
+        font-size: 1.3rem;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        font-size: 13px;
+    }
+
+    .contactinfo {
+        max-width: 100%; /* Para di lumagpas */
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto; /* Para naka-center */
+        padding: 0 5px; /* Para may konting space sa gilid */
+        box-sizing: border-box; /* Para hindi lumagpas sa width */
+    }
+
+    .container .contactinfo .box {
+        display: flex;
+        align-items: center; /* Ensures vertical alignment */
+        justify-content: start;
+        gap: 12px; /* Adds consistent spacing */
+        padding: 10px 0;
+    }
+
+
+    .container .contactinfo .box .icon {
+        min-width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: white;
+        flex-shrink: 0; /* Prevents resizing */
+    }
+
+    .container .contactinfo .box .text {
+        flex-grow: 1;
+        text-align: left;
+        line-height: 1.4; /* Improves text readability */
+        font-size: small;
+    }
+
+}

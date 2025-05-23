@@ -1,161 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="home.css" />
-  <link rel="stylesheet" href="techstack.css" />
-  <link rel="stylesheet" href="projects.css" />
-  <link rel="stylesheet" href="certificates.css" />
-  <link rel="stylesheet" href="about.css" />
-</head>
-<body>
-  <header>
-    <nav class="nav-menu" id="nav-menu">
-      <div class="logo">My<span>Portfolio</span></div>
-
-
-      <!-- Hamburger Button -->
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <ul class="unli">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#techstack">Techstack</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-
-   <video autoplay muted loop>
-      <source src="PICS AND VIDS/BG BLACK.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-
-  <section id="home">
-    <!-- <video autoplay muted loop>
-      <source src="PICS AND VIDS/BG BLACK.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video> -->
-    <div class="content">
-        <div class="profile-container">
-          <!-- LEFT SIDE - IMAGE -->
-          <div class="profile-image">
-            <img src="PICS AND VIDS/CVPIC NOBAK.png" alt="Profile Picture">
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
     
-          <!-- RIGHT SIDE - TEXT & SOCIALS -->
-          <div class="profile-info">
-            <h2 class="header2">Hello! I'm <h1 class="header1">Jessie Jeff Yambao<h1></h2>
-            <p class="position">Software Engineer / Web Developer</p>
-            <div class="social-icons">
-                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="techstack.css" />
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="certificates.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="contacts.css" />
+  </head>
+    <body>
+      <header>
+          <nav class="nav-menu" id="nav-menu">
+            <div class="logo">My<span>Portfolio</span></div>
+
+            <!-- Hamburger Button -->
+            <div class="hamburger" id="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            
+            <ul class="unli">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#certificates">Certificates</a></li>
+              <li><a href="#techstack">Techstack</a></li>
+              <li><a href="#contacts">Contact</a></li>
+            </ul>
+          </nav>
+      </header>
+
+        <video autoplay muted loop>
+          <source src="PICS AND VIDS/BG BLACK.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+      <section id="home">
+        <div class="content">
+            <div class="profile-container">
+              <!-- LEFT SIDE - IMAGE -->
+              <div class="profile-image">
+                <img src="PICS AND VIDS/CVPIC NOBAK.png" alt="Profile Picture">
               </div>
+        
+              <!-- RIGHT SIDE - TEXT & SOCIALS -->
+              <div class="profile-info">
+                <h2 class="header2">Hello! I'm <h1 class="header1">Jessie Jeff Yambao<h1></h2>
+                <p class="position">Software Engineer / Web Developer</p>
+                  <div class="social-icons">
+                      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+      <section id="about">
+        <div class="about-wrapper">
+          <h2 class="about-section-title">About <span>Me</span></h2>
+          <div class="about-card about-flex">
+
+            <div class="about-text-container">
+              <h3 class="about-name">Jessie Jeff Yambao</h3>
+              <ul class="personal-info">
+                <li><strong>Location:</strong> Mandaluyong City, Philippines</li>
+                <li><strong>Email:</strong> jessiejeffyambao06@gmail.com</li>
+                <li><strong>Phone:</strong> +63 951 474 1849</li>
+                <li><strong>Role:</strong> Frontend Developer</li>
+              </ul>
+
+              <p class="about-text">
+                Hi, I'm a dedicated developer focused on building modern, responsive, and user-friendly websites.
+                I specialize in <span class="highlight">frontend development</span>,
+                <span class="highlight">UI/UX design</span>, and
+                <span class="highlight">web deployment</span>.
+                <br><br>
+                I'm passionate about turning ideas into visually appealing and functional digital experiences.
+              </p>
+
+              <a href="documents/CV_JYambao 2025.pdf" download class="download-btn">Download CV</a>
+            </div>
+
+            <div class="about-image">
+              <img src="PICS AND VIDS/vince.jpg" alt="My Profile Picture">
+            </div>
+          </div>
+
+          <h3 class="services-title">What I Offer</h3>
+
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="icon-container">
+                <i class="fas fa-code"></i>
+              </div>
+              <h4>Web Development</h4>
+              <p>I build responsive websites using modern HTML, CSS, JS, and frameworks like React or ASP.NET Core.</p>
+            </div>
+            <div class="service-card">
+              <div class="icon-container">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h4>UI/UX Design</h4>
+              <p>Create smooth user experiences using tools like Figma and Canva with a focus on accessibility.</p>
+            </div>
+            <div class="service-card">
+              <div class="icon-container">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h4>Site Maintenance</h4>
+              <p>Keep your website up-to-date, fast, and secure with regular updates and technical support.</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
 
-  <section id="about">
-    <div class="about-wrapper">
-      <h2 class="about-section-title">About <span>Me</span></h2>
+        <section id="projects">
+            <h1 class="section-title">My <span>Projects</span></h1>
+            <div class="project-container">
+                        <!-- Project Card -->
+                <div class="project-card">
+                  <!-- LEFT SECTION: Image + Title -->
+                  <div class="project-left">
+                    <img src="PICS AND VIDS/Ziontech Mockup.png" alt="Project UI" class="project-image">
+                    <h2 class="project-title">ZIONTECH COMMUNICATIONS, INC.</h2>
+                  </div>
+                  <!-- RIGHT SECTION: Description + Badges + Link -->
+                  <div class="project-right">
+                    <p class="project-desc">
+                      The ZionTech Communication website serves as a simple landing page designed to introduce our company and the services we offer. It provides visitors with a quick overview of ZionTech, including our core services, contact information, and ways to reach out to us.
+                    </p>
 
-      <div class="about-card about-flex">
-
-        <div class="about-text-container">
-          <h3 class="about-name">Jessie Jeff Yambao</h3>
-          <ul class="personal-info">
-            <li><strong>Location:</strong> Mandaluyong City, Philippines</li>
-            <li><strong>Email:</strong> jessiejeffyambao06@gmail.com</li>
-            <li><strong>Phone:</strong> +63 951 474 1849</li>
-            <li><strong>Role:</strong> Frontend Developer</li>
-          </ul>
-
-          <p class="about-text">
-            Hi, I'm a dedicated developer focused on building modern, responsive, and user-friendly websites.
-            I specialize in <span class="highlight">frontend development</span>,
-            <span class="highlight">UI/UX design</span>, and
-            <span class="highlight">web deployment</span>.
-            <br><br>
-            I'm passionate about turning ideas into visually appealing and functional digital experiences.
-          </p>
-
-          <a href="documents/CV_JYambao 2025.pdf" download class="download-btn">Download CV</a>
-        </div>
-
-        <div class="about-image">
-          <img src="PICS AND VIDS/vince.jpg" alt="My Profile Picture">
-        </div>
-      </div>
-
-      <h3 class="services-title">What I Offer</h3>
-
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="icon-container">
-            <i class="fas fa-code"></i>
-          </div>
-          <h4>Web Development</h4>
-          <p>I build responsive websites using modern HTML, CSS, JS, and frameworks like React or ASP.NET Core.</p>
-        </div>
-        <div class="service-card">
-          <div class="icon-container">
-            <i class="fas fa-paint-brush"></i>
-          </div>
-          <h4>UI/UX Design</h4>
-          <p>Create smooth user experiences using tools like Figma and Canva with a focus on accessibility.</p>
-        </div>
-        <div class="service-card">
-          <div class="icon-container">
-            <i class="fas fa-tools"></i>
-          </div>
-          <h4>Site Maintenance</h4>
-          <p>Keep your website up-to-date, fast, and secure with regular updates and technical support.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+                    <div class="tech-stack">
+                      <span class="badge html">Html</span>
+                      <span class="badge css">CSS</span>
+                      <span class="badge hostinger">Hostinger</span>
+                      <span class="badge github">GitHub</span>
+                      <span class="badge js">JavaScript</span>
+                      <span class="badge canva">Canva</span>
+                      <span class="badge visual">Visual Studio</span>
+                    </div>
+                    <div class="link-container">
+                    <a href="https://ziontechcommunications.vercel.app" class="github-link" target="_blank">View Project</a>
+                    </div>
+                  
+                  </div>
+                </div>
 
 
-
-
-
-    <section id="projects">
-
-        <!-- <video autoplay muted loop>
-            <source src="PICS AND VIDS/BG BLACK.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video> -->
-        <h1 class="section-title">My <span>Projects</span></h1>
-      
-        <div class="project-container">
-      
-                    <!-- Project Card -->
+                      <!-- Project Card - Innovence I.T. Services -->
             <div class="project-card">
-              <!-- LEFT SECTION: Image + Title -->
               <div class="project-left">
-                <img src="PICS AND VIDS/Ziontech Mockup.png" alt="Project UI" class="project-image">
-                <h2 class="project-title">ZIONTECH COMMUNICATIONS, INC.</h2>
+                <img src="PICS AND VIDS/Innovence Mockup 2.png" alt="Project UI" class="project-image">
+                <h2 class="project-title">INNOVENCE I.T. SERVICES</h2>
               </div>
 
-              <!-- RIGHT SECTION: Description + Badges + Link -->
               <div class="project-right">
                 <p class="project-desc">
-                  The ZionTech Communication website serves as a simple landing page designed to introduce our company and the services we offer. It provides visitors with a quick overview of ZionTech, including our core services, contact information, and ways to reach out to us.
+                  The Innovence I.T. Services landing page was created to give visitors a clear and straightforward introduction to our company and the technology solutions we provide. This site highlights our commitment to delivering smart, reliable, and efficient IT services for businesses and individuals alike.
                 </p>
 
                 <div class="tech-stack">
@@ -167,284 +185,308 @@
                   <span class="badge canva">Canva</span>
                   <span class="badge visual">Visual Studio</span>
                 </div>
-                <div class="link-container">
-                <a href="https://ziontechcommunications.vercel.app" class="github-link" target="_blank">View Project</a>
-                </div>
-              
+
+            <div class="link-container">
+            <a href="https://innovence.io" class="github-link" target="_blank">View Project</a>
+            </div>
+          
+          </div>
+      </div>
+
+          <!-- Project Card - Personal Portfolio -->
+          <div class="project-card">
+            <div class="project-left">
+              <img src="PICS AND VIDS/Personal Mockup.png" alt="Project UI" class="project-image">
+              <h2 class="project-title">MY PERSONAL PORTFOLIO</h2>
+            </div>
+
+            <div class="project-right">
+              <p class="project-desc">
+                Hi! I’m Jessie, an aspiring IT professional with a passion for tech, design, and problem-solving. This portfolio was built to showcase some of the projects I’ve worked on, the skills I’ve learned, and the journey I’m currently taking in the world of technology.
+              </p>
+              <div class="tech-stack">
+                <span class="badge html">Html</span>
+                <span class="badge css">CSS</span>
+                <span class="badge hostinger">Hostinger</span>
+                <span class="badge github">GitHub</span>
+                <span class="badge js">JavaScript</span>
+                <span class="badge canva">Canva</span>
+                <span class="badge visual">Visual Studio</span>
+              </div>
+              <div class="link-container">
+              <a href="https://jessiejeffyambao.vercel.app" class="github-link" target="_blank">View Project</a>
               </div>
             </div>
-
-
-           <!-- Project Card - Innovence I.T. Services -->
-<div class="project-card">
-  <div class="project-left">
-    <img src="PICS AND VIDS/Innovence Mockup 2.png" alt="Project UI" class="project-image">
-    <h2 class="project-title">INNOVENCE I.T. SERVICES</h2>
-  </div>
-
-  <div class="project-right">
-    <p class="project-desc">
-      The Innovence I.T. Services landing page was created to give visitors a clear and straightforward introduction to our company and the technology solutions we provide. This site highlights our commitment to delivering smart, reliable, and efficient IT services for businesses and individuals alike.
-    </p>
-
-    <div class="tech-stack">
-      <span class="badge html">Html</span>
-      <span class="badge css">CSS</span>
-      <span class="badge hostinger">Hostinger</span>
-      <span class="badge github">GitHub</span>
-      <span class="badge js">JavaScript</span>
-      <span class="badge canva">Canva</span>
-      <span class="badge visual">Visual Studio</span>
-    </div>
-
-    <div class="link-container">
-    <a href="https://innovence.io" class="github-link" target="_blank">View Project</a>
-    </div>
-  
-  </div>
-</div>
-
-<!-- Project Card - Personal Portfolio -->
-<div class="project-card">
-  <div class="project-left">
-    <img src="PICS AND VIDS/Personal Mockup.png" alt="Project UI" class="project-image">
-    <h2 class="project-title">MY PERSONAL PORTFOLIO</h2>
-  </div>
-
-  <div class="project-right">
-    <p class="project-desc">
-      Hi! I’m Jessie, an aspiring IT professional with a passion for tech, design, and problem-solving. This portfolio was built to showcase some of the projects I’ve worked on, the skills I’ve learned, and the journey I’m currently taking in the world of technology.
-    </p>
-
-    <div class="tech-stack">
-      <span class="badge html">Html</span>
-      <span class="badge css">CSS</span>
-      <span class="badge hostinger">Hostinger</span>
-      <span class="badge github">GitHub</span>
-      <span class="badge js">JavaScript</span>
-      <span class="badge canva">Canva</span>
-      <span class="badge visual">Visual Studio</span>
-    </div>
-    <div class="link-container">
-    <a href="https://jessiejeffyambao.vercel.app" class="github-link" target="_blank">View Project</a>
-    </div>
-    
-  </div>
-</div>
-
-
-        </div>
-      </section>
+          </div>
+            </div>
+          </section>
 
 
 
 
-      <section id="certificates">
-        <!-- <video autoplay muted loop>
-            <source src="PICS AND VIDS/BG BLACK.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video> -->
-        <h1 class="certificates-section-title">My <span>Certificates</span></h1>
-      
-        <div class="certificates-container">
-      
-          <!-- Project Card -->
-          <div class="certificates-card">
-            <img src="PICS AND VIDS/Introduction to HTML.jpg" alt="Project UI" class="certificates-image">
-            
-            <h2 class="certificates-title">Introduction to HTML</h2>
-            <p class="certificates-desc"> Web-based attendance system using QR Code and Android app as scanner.</p>
-      
-            <a href="https://github.com/yourproject" class="github-link" target="_blank">View Details</a>
+          <section id="certificates">
+            <h1 class="certificates-section-title">My <span>Certificates</span></h1>
+          
+            <div class="certificates-container">
+          
+              <!-- Project Card -->
+              <div class="certificates-card">
+                <img src="PICS AND VIDS/Introduction to HTML.jpg" alt="Project UI" class="certificates-image">
+                
+                <h2 class="certificates-title">Introduction to HTML</h2>
+                <p class="certificates-desc"> Web-based attendance system using QR Code and Android app as scanner.</p>
+          
+                <a href="https://github.com/yourproject" class="github-link" target="_blank">View Details</a>
+              </div>
+
+
+              <!-- Project Card -->
+              <div class="certificates-card">
+                <img src="PICS AND VIDS/Web Development SOLOLEARN CERTIFICATE.png" alt="Project UI" class="certificates-image">
+                
+                <h2 class="certificates-title">Web Development</h2>
+                <p class="certificates-desc">
+                  Web-based attendance system using QR Code and Android app as scanner.
+                </p>
+          
+                <a href="https://github.com/yourproject" class="github-link" target="_blank">View Details</a>
+              </div>
+
+
+              <!-- Project Card -->
+              <div class="certificates-card">
+                <img src="PICS AND VIDS/Front-end for Beginners SOLOLEARN CERTIFICATE.jpg" alt="Project UI" class="certificates-image">
+                
+                <h2 class="certificates-title">Front-end for Beginners</h2>
+                <p class="certificates-desc">
+                  Web-based attendance system using QR Code and Android app as scanner.
+                </p>
+          
+                <a href="https://github.com/yourproject" class="github-link" target="_blank">View Details</a>
+              </div>
+
+
+              <!-- Project Card -->
+              <div class="certificates-card">
+                <img src="PICS AND VIDS/Reactjs - The Complete ReactJs Course For Beginners.jpg" alt="Project UI" class="certificates-image">
+                
+                <h2 class="certificates-title">Reactjs - The Complete ReactJs Course For Beginners</h2>
+                <p class="certificates-desc">
+                  Web-based attendance system using QR Code and Android app as scanner.
+                </p>
+          
+                <a href="https://github.com/yourproject" class="github-link" target="_blank">View Details</a>
+              </div>
+
+              <!-- Project Card -->
+              <div class="certificates-card">
+                <img src="PICS AND VIDS/C Intermediate.png" alt="Project UI" class="certificates-image">
+                
+                <h2 class="certificates-title">C Intermediate</h2>
+                <p class="certificates-desc">
+                  Web-based attendance system using QR Code and Android app as scanner.
+                </p>
+          
+                <a href="https://github.com/yourproject" class="github-link" target="_blank">View Details</a>
+              </div>
+
+              <!-- Project Card -->
+              <div class="certificates-card">
+                <img src="PICS AND VIDS/Introduction to C.png" alt="Project UI" class="certificates-image">
+                
+                <h2 class="certificates-title">Introduction to C</h2>
+                <p class="certificates-desc">
+                  Web-based attendance system using QR Code and Android app as scanner.
+                </p>
+          
+                <a href="https://github.com/yourproject" class="github-link" target="_blank">View Details</a>
+              </div>
+
+              <!-- Project Card -->
+              <div class="certificates-card">
+                <img src="PICS AND VIDS/C.png" alt="Project UI" class="certificates-image">
+                
+                <h2 class="certificates-title">C</h2>
+                <p class="certificates-desc">
+                  Web-based attendance system using QR Code and Android app as scanner.
+                </p>
+
+                <a href="https://github.com/yourproject" class="github-link" target="_blank">View Details</a>
+              </div>
+
+              <!-- Project Card -->
+              <div class="certificates-card">
+                <img src="PICS AND VIDS/Introduction to Cybersecurity.png" alt="Project UI" class="certificates-image">
+                
+                <h2 class="certificates-title">Introduction to Cybersecurity</h2>
+                <p class="certificates-desc">
+                  Web-based attendance system using QR Code and Android app as scanner.
+                </p>
+          
+                <a href="https://github.com/yourproject" class="github-link" target="_blank">View Details</a>
+              </div>
+
+              <!-- Project Card -->
+              <div class="certificates-card">
+                <img src="PICS AND VIDS/Introduction to IOT.png" alt="Project UI" class="certificates-image">
+                
+                <h2 class="certificates-title">Introduction to IOT</h2>
+                <p class="certificates-desc">
+                  Web-based attendance system using QR Code and Android app as scanner.
+                </p>
+          
+                <a href="https://github.com/yourproject" class="github-link" target="_blank">View Details</a>
+              </div>
+
+              <!-- Project Card -->
+              <div class="certificates-card">
+                <img src="PICS AND VIDS/Networking Basics.png" alt="Project UI" class="certificates-image">
+                
+                <h2 class="certificates-title">Networking Basics</h2>
+                <p class="certificates-desc">
+                  Web-based attendance system using QR Code and Android app as scanner.
+                </p>
+          
+                <a href="https://github.com/yourproject" class="github-link" target="_blank">View Details</a>
+              </div>
+            </div>
+          </section>
+          
+
+          <section id="techstack">
+            <div class="tech-stack-content">
+              <h1 class="tech-title">Tech <span>Stack</span></h1>
+          
+              <div class="tech-grid">
+                <!-- Languages & Frameworks -->
+                <div class="tech-item">
+                  <img src="PICS AND VIDS/html.png" alt="HTML">
+                  <span>HTML</span>
+                </div>
+                <div class="tech-item">
+                  <img src="PICS AND VIDS/css3.png" alt="CSS">
+                  <span>CSS</span>
+                </div>
+                <div class="tech-item">
+                  <img src="PICS AND VIDS/js.png" alt="JavaScript">
+                  <span>JavaScript</span>
+                </div>
+                <div class="tech-item">
+                  <img src="PICS AND VIDS/csharp.png" alt="C#">
+                  <span>C#</span>
+                </div>
+          
+                <!-- Database & Backend -->
+                <div class="tech-item">
+                  <img src="PICS AND VIDS/mysql.png" alt="MySQL">
+                  <span>MySQL</span>
+                </div>
+                <div class="tech-item">
+                  <img src="PICS AND VIDS/numix-circle-for-windows-xampp-icon-png-icon-removebg-preview.png" alt="XAMPP">
+                  <span>XAMPP</span>
+                </div>
+          
+                <!-- Design Tools -->
+                <div class="tech-item">
+                  <img src="PICS AND VIDS/figma.png" alt="Figma">
+                  <span>Figma</span>
+                </div>
+                <div class="tech-item">
+                  <img src="PICS AND VIDS/canva.png" alt="Canva">
+                  <span>Canva</span>
+                </div>
+          
+                <!-- Version Control -->
+                <div class="tech-item">
+                  <img src="PICS AND VIDS/github.png" alt="GitHub">
+                  <span>GitHub</span>
+                </div>
+                <div class="tech-item">
+                  <img src="PICS AND VIDS/gitbash.png" alt="Git Bash">
+                  <span>Git Bash</span>
+                </div>
+          
+                <!-- Deployment & Hosting -->
+                <div class="tech-item">
+                  <img src="PICS AND VIDS/vercel.png" alt="Vercel">
+                  <span>Vercel</span>
+                </div>
+                <div class="tech-item">
+                  <img src="PICS AND VIDS/hostinger.png" alt="Hostinger">
+                  <span>Hostinger</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+           <!-- CONTACTS SECTION -->
+<section id="contacts">
+  <div class="overlay"></div>
+      <h2 class="head">Let's Connect</h2>
+      <p class="prime">We’d love to hear from you! Drop by during business hours or send us a message anytime.</p>
+
+      <div class="container">
+          <div class="contactinfo">
+
+              <div class="box">
+                  <div class="icon">
+                      <a href="https://api.whatsapp.com/send?phone=639177080379&text&context=ARCqAdSp-sv3KVLODpGRKrY5-J-ejXQ0MEYsO4zkmbyEPFLDBpO3PqPCyZmR6R3fRXJ_yiE8CyfAkgmU9mCs-zsWSxIOm-UliaOR1-Kfu9nT9pkelIz87QDTBa3Sc2Eo8MWSh1s-_-uudZiLg3dug_--JQ&source&app=facebook" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                  </div>
+                  <div class="text">
+                      <h3>Contact Number</h3>
+                      <p>09514741849
+                      </p>
+                  </div>
+              </div>
+
+              <div class="box">
+                <div class="icon">
+                    <a href="https://mail.google.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="text">
+                    <h3>Email</h3>
+                    <p>jessiejeffyambao06@gmail.com</p>
+                </div>
+              </div>
           </div>
 
-
-           <!-- Project Card -->
-           <div class="certificates-card">
-            <img src="PICS AND VIDS/Web Development SOLOLEARN CERTIFICATE.png" alt="Project UI" class="certificates-image">
-            
-            <h2 class="certificates-title">Web Development</h2>
-            <p class="certificates-desc">
-              Web-based attendance system using QR Code and Android app as scanner.
-            </p>
+          <div class="contact-container">
+              <h2>Contact Us</h2>
+              <form id="contactForm" action="https://formspree.io/f/xqaqbkye" method="POST">
+                  <div class="input-group">
+                      <label for="name">Full Name</label>
+                      <input type="text" id="name" name="name" placeholder="Enter your name" required autocomplete="name">
+                      <small class="error"></small>
+                  </div>
       
-            <a href="https://github.com/yourproject" class="github-link" target="_blank">View Details</a>
+                  <div class="input-group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email">
+                      <small class="error"></small>
+                  </div>
+      
+                  <div class="input-group">
+                      <label for="message">Message</label>
+                      <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+                      <small class="error"></small>
+                  </div>
+      
+                  <button type="submit">Send Message</button>
+                  <p id="successMessage" class="hidden">✔️ Your message has been sent!</p>
+              </form>
           </div>
+      </div>
+
+</section>
 
 
-          <!-- Project Card -->
-          <div class="certificates-card">
-            <img src="PICS AND VIDS/Front-end for Beginners SOLOLEARN CERTIFICATE.jpg" alt="Project UI" class="certificates-image">
-            
-            <h2 class="certificates-title">Front-end for Beginners</h2>
-            <p class="certificates-desc">
-              Web-based attendance system using QR Code and Android app as scanner.
-            </p>
-      
-            <a href="https://github.com/yourproject" class="github-link" target="_blank">View Details</a>
-          </div>
 
+    <footer>
+    <p>&copy; 2025 INNOVENCE I.T. SERVICES. All rights reserved.</p>
+  </footer>
+          
+          <script src="index.js"></script>
 
-          <!-- Project Card -->
-          <div class="certificates-card">
-            <img src="PICS AND VIDS/Reactjs - The Complete ReactJs Course For Beginners.jpg" alt="Project UI" class="certificates-image">
-            
-            <h2 class="certificates-title">Reactjs - The Complete ReactJs Course For Beginners</h2>
-            <p class="certificates-desc">
-              Web-based attendance system using QR Code and Android app as scanner.
-            </p>
-      
-            <a href="https://github.com/yourproject" class="github-link" target="_blank">View Details</a>
-          </div>
-
-          <!-- Project Card -->
-          <div class="certificates-card">
-            <img src="PICS AND VIDS/C Intermediate.png" alt="Project UI" class="certificates-image">
-            
-            <h2 class="certificates-title">C Intermediate</h2>
-            <p class="certificates-desc">
-              Web-based attendance system using QR Code and Android app as scanner.
-            </p>
-      
-            <a href="https://github.com/yourproject" class="github-link" target="_blank">View Details</a>
-          </div>
-
-          <!-- Project Card -->
-          <div class="certificates-card">
-            <img src="PICS AND VIDS/Introduction to C.png" alt="Project UI" class="certificates-image">
-            
-            <h2 class="certificates-title">Introduction to C</h2>
-            <p class="certificates-desc">
-              Web-based attendance system using QR Code and Android app as scanner.
-            </p>
-      
-            <a href="https://github.com/yourproject" class="github-link" target="_blank">View Details</a>
-          </div>
-
-          <!-- Project Card -->
-          <div class="certificates-card">
-            <img src="PICS AND VIDS/C.png" alt="Project UI" class="certificates-image">
-            
-            <h2 class="certificates-title">C</h2>
-            <p class="certificates-desc">
-              Web-based attendance system using QR Code and Android app as scanner.
-            </p>
-
-            <a href="https://github.com/yourproject" class="github-link" target="_blank">View Details</a>
-          </div>
-
-          <!-- Project Card -->
-          <div class="certificates-card">
-            <img src="PICS AND VIDS/Introduction to Cybersecurity.png" alt="Project UI" class="certificates-image">
-            
-            <h2 class="certificates-title">Introduction to Cybersecurity</h2>
-            <p class="certificates-desc">
-              Web-based attendance system using QR Code and Android app as scanner.
-            </p>
-      
-            <a href="https://github.com/yourproject" class="github-link" target="_blank">View Details</a>
-          </div>
-
-          <!-- Project Card -->
-          <div class="certificates-card">
-            <img src="PICS AND VIDS/Introduction to IOT.png" alt="Project UI" class="certificates-image">
-            
-            <h2 class="certificates-title">Introduction to IOT</h2>
-            <p class="certificates-desc">
-              Web-based attendance system using QR Code and Android app as scanner.
-            </p>
-      
-            <a href="https://github.com/yourproject" class="github-link" target="_blank">View Details</a>
-          </div>
-
-          <!-- Project Card -->
-          <div class="certificates-card">
-            <img src="PICS AND VIDS/Networking Basics.png" alt="Project UI" class="certificates-image">
-            
-            <h2 class="certificates-title">Networking Basics</h2>
-            <p class="certificates-desc">
-              Web-based attendance system using QR Code and Android app as scanner.
-            </p>
-      
-            <a href="https://github.com/yourproject" class="github-link" target="_blank">View Details</a>
-          </div>
-        </div>
-      </section>
-      
-
-  
-      <section id="techstack">
-        <!-- <video autoplay muted loop>
-          <source src="PICS AND VIDS/BG BLACK.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video> -->
-      
-        <div class="tech-stack-content">
-          <h1 class="tech-title">Tech <span>Stack</span></h1>
-      
-          <div class="tech-grid">
-            <!-- Languages & Frameworks -->
-            <div class="tech-item">
-              <img src="PICS AND VIDS/html.png" alt="HTML">
-              <span>HTML</span>
-            </div>
-            <div class="tech-item">
-              <img src="PICS AND VIDS/css3.png" alt="CSS">
-              <span>CSS</span>
-            </div>
-            <div class="tech-item">
-              <img src="PICS AND VIDS/js.png" alt="JavaScript">
-              <span>JavaScript</span>
-            </div>
-            <div class="tech-item">
-              <img src="PICS AND VIDS/csharp.png" alt="C#">
-              <span>C#</span>
-            </div>
-      
-            <!-- Database & Backend -->
-            <div class="tech-item">
-              <img src="PICS AND VIDS/mysql.png" alt="MySQL">
-              <span>MySQL</span>
-            </div>
-            <div class="tech-item">
-              <img src="PICS AND VIDS/numix-circle-for-windows-xampp-icon-png-icon-removebg-preview.png" alt="XAMPP">
-              <span>XAMPP</span>
-            </div>
-      
-            <!-- Design Tools -->
-            <div class="tech-item">
-              <img src="PICS AND VIDS/figma.png" alt="Figma">
-              <span>Figma</span>
-            </div>
-            <div class="tech-item">
-              <img src="PICS AND VIDS/canva.png" alt="Canva">
-              <span>Canva</span>
-            </div>
-      
-            <!-- Version Control -->
-            <div class="tech-item">
-              <img src="PICS AND VIDS/github.png" alt="GitHub">
-              <span>GitHub</span>
-            </div>
-            <div class="tech-item">
-              <img src="PICS AND VIDS/gitbash.png" alt="Git Bash">
-              <span>Git Bash</span>
-            </div>
-      
-            <!-- Deployment & Hosting -->
-            <div class="tech-item">
-              <img src="PICS AND VIDS/vercel.png" alt="Vercel">
-              <span>Vercel</span>
-            </div>
-            <div class="tech-item">
-              <img src="PICS AND VIDS/hostinger.png" alt="Hostinger">
-              <span>Hostinger</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      
-
-</body>
+    </body>
 </html>
