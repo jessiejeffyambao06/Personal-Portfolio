@@ -22,14 +22,14 @@
   #home .content {
     position: relative;
     z-index: 1;
-    padding: 40px;
+    /* padding: 40px; */
     /* background: rgba(0, 0, 0, 0.4); */
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;;
     max-width: 1000px;
-    margin: auto;
+    margin-top: 75px;
     flex-wrap: wrap;
     gap: 40px;
   }
