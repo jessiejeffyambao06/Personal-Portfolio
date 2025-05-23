@@ -12,13 +12,13 @@
   text-align: center;
 }
 
-.section-title {
+.about-section-title {
   font-size: 2.8rem;
   color: #fff;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
-.section-title span {
+.about-section-title span {
   color: rgb(28, 161, 250);
 }
 
