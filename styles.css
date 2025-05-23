@@ -1,11 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap');
+
+:root {
+  --main-font: 'Oxanium', sans-serif;
+  /* --font-body: 'Rajdhani', sans-serif; */
+
+}
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  /* font-family: 'Segoe UI', sans-serif; */
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -58,18 +68,21 @@ nav .logo {
   font-size: 1.8em;
   font-weight: bold;
   color: white;
+  letter-spacing: 2px;
 }
 
 nav span {
   font-size: 1em;
   font-weight: bold;
   color: rgb(28, 161, 250);
+  letter-spacing: 2px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   gap: 40px;
+  letter-spacing: 1.5px;
 }
 
 nav ul li a {
@@ -106,16 +119,19 @@ nav ul li a:hover {
   color: rgb(28, 161, 250);
   font-weight: bold;
   font-size: 3em;
+  letter-spacing: 2px;
 }
 
 .profile-info .header2 {
   color: white;
   font-size: 1.5em;
+  letter-spacing: 2px;
 }
 
 .profile-info .position {
   color: #ffffff;
   font-size: 1.5em;
+  letter-spacing: 2px;
 }
 
 /* Hamburger styles (default hidden) */

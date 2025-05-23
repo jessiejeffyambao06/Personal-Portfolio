@@ -19,10 +19,12 @@
   color: #fff;
   margin-bottom: 10px;
   margin-top: 85px;
+  letter-spacing: 2px;
 }
 
 .about-section-title span {
   color: rgb(28, 161, 250);
+  letter-spacing: 2px;
 }
 
 /* About Card Layout */
@@ -68,6 +70,7 @@
   font-size: 2rem;
   color: #1ca1fa;
   margin-bottom: 15px;
+  letter-spacing: 2px;
 }
 
 .personal-info {
@@ -77,6 +80,7 @@
   color: #ccc;
   font-size: 1rem;
   line-height: 1.8;
+  letter-spacing: 2px;
 }
 
 .personal-info li {
@@ -87,11 +91,13 @@
   color: #e0e0e0;
   font-size: 1.1rem;
   line-height: 1.9;
+  letter-spacing: 2px;
 }
 
 .highlight {
   color: rgb(28, 161, 250);
   font-weight: 600;
+  letter-spacing: 2px;
 }
 
 /* Download CV Button */
@@ -105,6 +111,7 @@
   border-radius: 8px;
   font-weight: 600;
   transition: background-color 0.3s ease;
+  letter-spacing: 1px;
 }
 
 .download-btn:hover {
@@ -116,6 +123,7 @@
   font-size: 3rem;
   color: #ffffff;
   margin-bottom: 35px;
+  letter-spacing: 2px;
 }
 
 .services-grid {
@@ -124,6 +132,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 40px;
+  letter-spacing: 2px;
 }
 
 .service-card {
@@ -144,6 +153,7 @@
   font-size: 2rem;
   color: rgb(28, 161, 250);
   margin-bottom: 15px;
+  letter-spacing: 2px;
 }
 
 .service-card:hover {

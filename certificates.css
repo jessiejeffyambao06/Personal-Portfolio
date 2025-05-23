@@ -16,17 +16,19 @@
   }
   
   .certificates-section-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #fdfdfd;
     margin-bottom: 40px;
     text-align: center;
     margin-top: 50px;
+    letter-spacing: 2px;
   }
 
   .certificates-section-title span {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: rgb(28, 161, 250);
     margin-bottom: 40px;
+    letter-spacing: 2px;
   }
   
   .certificates-container {
@@ -63,12 +65,14 @@
     color: rgb(28, 161, 250);
     font-weight: 600;
     margin-bottom: 10px;
+    letter-spacing: 2px;
   }
   
   .certificates-desc {
     font-size: 0.95rem;
     color: white;
     margin-bottom: 15px;
+    letter-spacing: 2px;
   }
   
   .tech-stack {
@@ -85,4 +89,5 @@
     text-decoration: none;
     color: white;
     font-weight: 500;
+    letter-spacing: 1px;
   }

@@ -24,17 +24,19 @@
   }
   
   .section-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #fdfdfd;
     margin-bottom: 40px;
     text-align: center;
     margin-top: 50px;
+    letter-spacing: 2px;
   }
 
   .section-title span {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: rgb(28, 161, 250);
     margin-bottom: 40px;
+    letter-spacing: 2px;
   }
   
   .project-container {
@@ -72,6 +74,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  /* letter-spacing: 2px; */
 }
 
 .project-image {
@@ -86,6 +89,7 @@
   color: rgb(28, 161, 250);
   font-weight: 600;
   margin-top: 10px;
+  letter-spacing: 2px;
 }
 
 .project-right {
@@ -93,12 +97,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  letter-spacing: 2px;
 }
 
 .project-desc {
   font-size: 0.95rem;
   color: white;
   margin-bottom: 15px;
+  letter-spacing: 2px;
 }
 
 .tech-stack {
@@ -106,6 +112,7 @@
   flex-wrap: wrap;
   gap: 6px;
   margin-bottom: 15px;
+  letter-spacing: 2px;
 }
 
 .badge {
