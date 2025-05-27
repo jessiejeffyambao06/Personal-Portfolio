@@ -42,18 +42,18 @@
 .about-flex {
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
   text-align: left;
 }
 
 .about-image img {
-  width: 220px;
-  height: 220px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #1ca1fa;
+  /* border-radius: 50%; */
+  /* border: 4px solid #1ca1fa; */
   transition: transform 0.3s ease;
 }
 
