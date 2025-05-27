@@ -46,7 +46,7 @@ section {
 }
 
 header {
-  background-color: rgba(2, 4, 36, 0.984);
+  background-color: rgb(2, 4, 36);
   color: white;
   padding: 20px;
   position: fixed;
@@ -183,3 +183,12 @@ nav ul li a:hover {
 }
 
 
+
+footer {
+    background-color: rgb(2, 4, 36);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    letter-spacing: 1px;
+  }

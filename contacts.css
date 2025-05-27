@@ -35,8 +35,11 @@
 .head {
     position: relative;
     text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
     margin-bottom: 20px;
-    margin-top: 120px;
+    margin-top: 60px;
     color: white;
 
     opacity: 0;
@@ -51,11 +54,23 @@
       }
 
 
+  .head span {
+    font-size: 3rem;
+    margin-bottom: 60px;
+    font-weight: bold;
+    color: rgb(28, 161, 250);
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+
+
 
 .prime {
     position: relative;
     text-align: center;
     margin-bottom: 50px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
     color: white;
 
     opacity: 0;
@@ -111,7 +126,8 @@
     flex-grow: 1; /* Ensure text takes up remaining space */
     text-align: left; /* Align text to the left */
     line-height: 1.4; /* Improve readability */
-    font-size: 1rem; /* Consistent font size */
+    font-size: 1.1rem; /* Consistent font size */
+    letter-spacing: 1px;
 }
 
 
@@ -123,21 +139,26 @@
     align-items: center;
     border-radius: 50%;
     font-size: 22px;
-    background: white;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 10px rgba(28, 161, 250, 0.558);
     margin-right: 10px;
-    transition: color 0.3s;
+    /* transition: color 0.3s; */
 }
+
 
 
 .contact-container h2 {
     margin-bottom: 15px;
     color: white;
     font-size: 1.5rem;
+    letter-spacing: 1px;
 }
 
 .input-group {
     text-align: left;
     margin-bottom: 15px;
+    letter-spacing: 1px;
 }
 
 .input-group label {
@@ -145,6 +166,7 @@
     font-weight: bold;
     margin-bottom: 5px;
     color: white;
+    letter-spacing: 1px;
 }
 
 .input-group input,
@@ -158,6 +180,7 @@
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: 0 0 5px rgba(28, 161, 250, 0.558);
+    letter-spacing: 1px;
 }
 
 button {

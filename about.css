@@ -126,6 +126,12 @@
   letter-spacing: 2px;
 }
 
+.services-title span {
+  font-size: 3rem;
+  color: rgb(28, 161, 250);
+  letter-spacing: 2px;
+}
+
 .services-grid {
   display: flex;
   gap: 30px;
@@ -159,7 +165,6 @@
 .service-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 0 25px rgba(28, 161, 250, 0.4);
-  background-color: rgba(17, 108, 169, 0.962);
 }
 
 .icon-container {
@@ -219,5 +224,225 @@
 
   .about-text {
     font-size: 1rem;
+  }
+}
+
+
+
+/* ============================= */
+/* 1. Extra Small Devices (320px - 399px) */
+@media (max-width: 399px) {
+  .about-section-title,
+  .services-title {
+    font-size: 1.6rem;
+  }
+
+  .about-image img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .about-name {
+    font-size: 1.2rem;
+  }
+
+  .about-text,
+  .personal-info {
+    font-size: 0.85rem;
+  }
+
+  .download-btn {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+  }
+
+  .service-card {
+    padding: 20px 15px;
+    width: 100%;
+  }
+
+  .service-card h4 {
+    font-size: 1.3rem;
+  }
+
+  .icon-container {
+    font-size: 2rem;
+  }
+}
+
+/* ============================= */
+/* 2. Small Devices (400px - 575px) */
+@media (min-width: 400px) and (max-width: 575px) {
+  .about-section-title,
+  .services-title {
+    font-size: 1.8rem;
+  }
+
+  .about-image img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .about-name {
+    font-size: 1.3rem;
+  }
+
+  .about-text,
+  .personal-info {
+    font-size: 0.9rem;
+  }
+
+  .download-btn {
+    font-size: 0.9rem;
+    padding: 9px 18px;
+  }
+
+  .service-card {
+    padding: 25px 18px;
+    width: 100%;
+  }
+
+  .service-card h4 {
+    font-size: 1.4rem;
+  }
+}
+
+/* ============================= */
+/* 3. Medium Devices (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .about-section-title,
+  .services-title {
+    font-size: 2.2rem;
+  }
+
+  .about-image img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about-name {
+    font-size: 1.5rem;
+  }
+
+  .about-text,
+  .personal-info {
+    font-size: 1rem;
+  }
+
+  .download-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .service-card {
+    width: 100%;
+  }
+
+  .service-card h4 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ============================= */
+/* 4. Tablets (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-section-title,
+  .services-title {
+    font-size: 2.4rem;
+  }
+
+  .about-image img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-name {
+    font-size: 1.7rem;
+  }
+
+  .about-text {
+    font-size: 1.05rem;
+  }
+
+  .download-btn {
+    font-size: 1rem;
+  }
+
+  .service-card {
+    width: 80%;
+  }
+}
+
+/* ============================= */
+/* 5. Laptops (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-section-title,
+  .services-title {
+    font-size: 2.6rem;
+  }
+
+  .about-image img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-name {
+    font-size: 1.8rem;
+  }
+
+  .about-text {
+    font-size: 1.1rem;
+  }
+
+  .service-card {
+    width: 46%;
+  }
+}
+
+/* ============================= */
+/* 6. Large Screens (1200px - 1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .about-section-title,
+  .services-title {
+    font-size: 2.8rem;
+  }
+
+  .about-image img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .about-name {
+    font-size: 1.9rem;
+  }
+
+  .service-card {
+    width: 340px;
+  }
+}
+
+/* ============================= */
+/* 7. Extra Large Screens (1400px and up) */
+@media (min-width: 1400px) {
+  .about-section-title,
+  .services-title {
+    font-size: 3rem;
+  }
+
+  .about-image img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .about-name {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 1.15rem;
+  }
+
+  .service-card {
+    width: 340px;
   }
 }

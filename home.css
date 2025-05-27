@@ -1,168 +1,424 @@
 #home {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-  }
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
 
-  #home video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
+#home video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
 
-  #home .content {
-    position: relative;
-    z-index: 1;
-    /* padding: 40px; */
-    /* background: rgba(0, 0, 0, 0.4); */
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;;
-    max-width: 1000px;
-    margin-top: 75px;
-    flex-wrap: wrap;
-    gap: 40px;
-  }
-  
-  .profile-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 110px;
-  }
+#home .content {
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin-top: 75px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
 
-  
-  
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 110px;
+}
+
+.profile-image {
+  position: relative;
+  width: 320px;
+  height: 380px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+/* Glowing nebula-style red shape */
+.profile-image::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 370px;
+  height: 420px;
+  background: radial-gradient(circle at 50% 50%, rgb(28, 161, 250, 0.5), transparent 90%);
+  z-index: -1;
+  filter: blur(25px);
+  border-radius: 60% 40% 35% 65% / 60% 30% 70% 40%;
+  transform: rotate(6deg);
+}
+
+/* Subtle white galaxy orb behind or beside */
+.profile-image::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  right: -50px;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(255,255,255,0.04) 10%, transparent 80%);
+  border-radius: 50%;
+  z-index: -2;
+  filter: blur(10px);
+  transform: rotate(-20deg);
+}
+
+/* Profile image itself */
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40%;
+  position: relative;
+  z-index: 2;
+}
+
+.profile-info {
+  color: white;
+  max-width: 500px;
+  text-align: left;
+}
+
+.profile-info h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 22px;
+  border: 1px solid rgb(28, 161, 250);
+  box-shadow: 0 0 8px rgb(28, 161, 250);
+  border-radius: 100%;
+  padding: 9px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: rgb(28, 161, 250);
+  transform: scale(1.2);
+}
+
+/* ===== Responsive for all requested widths ===== */
+
+/* Extra large screens (2560px and above) */
+@media (min-width: 2560px) {
   .profile-image {
-    position: relative;
+    width: 420px;
+    height: 500px;
+  }
+  .profile-image::before {
+    width: 470px;
+    height: 550px;
+    top: -40px;
+    left: -40px;
+  }
+  .profile-image::after {
+    width: 160px;
+    height: 160px;
+    bottom: -40px;
+    right: -70px;
+  }
+  .profile-info h1 {
+    font-size: 3.2em;
+  }
+  .profile-info p {
+    font-size: 2em;
+  }
+  .social-icons a {
+    font-size: 32px;
+    padding: 14px;
+  }
+  .profile-container {
+    gap: 140px;
+  }
+}
+
+/* Large screens 1440px to 2559px */
+@media (min-width: 1440px) and (max-width: 2559px) {
+  .profile-image {
+    width: 370px;
+    height: 440px;
+  }
+  .profile-image::before {
+    width: 420px;
+    height: 490px;
+    top: -35px;
+    left: -35px;
+  }
+  .profile-image::after {
+    width: 140px;
+    height: 140px;
+    bottom: -35px;
+    right: -60px;
+  }
+  .profile-info h1 {
+    font-size: 2.6em;
+  }
+  .profile-info p {
+    font-size: 1.6em;
+  }
+  .social-icons a {
+    font-size: 26px;
+    padding: 12px;
+  }
+  .profile-container {
+    gap: 120px;
+  }
+}
+
+/* Medium-large screens (1024px to 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .profile-image {
     width: 320px;
     height: 380px;
-    margin: 0 auto;
-    z-index: 1;
   }
-  
-  /* Glowing nebula-style red shape */
   .profile-image::before {
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: -30px;
     width: 370px;
     height: 420px;
-    background: radial-gradient(circle at 50% 50%, rgb(28, 161, 250, 0.5), transparent 90%);
-    z-index: -1;
-    filter: blur(25px);
-    border-radius: 60% 40% 35% 65% / 60% 30% 70% 40%;
-    transform: rotate(6deg);
+    top: -30px;
+    left: -30px;
   }
-  
-  /* Subtle white galaxy orb behind or beside */
   .profile-image::after {
-    content: "";
-    position: absolute;
-    bottom: -30px;
-    right: -50px;
     width: 120px;
     height: 120px;
-    background: radial-gradient(circle, rgba(255,255,255,0.04) 10%, transparent 80%);
-    border-radius: 50%;
-    z-index: -2;
-    filter: blur(10px);
-    transform: rotate(-20deg);
+    bottom: -30px;
+    right: -50px;
   }
-  
-  /* Profile image itself */
-  .profile-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 40%;
-    /* border: 2px solid rgba(23, 23, 23, 0.1); */
-    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.05); */
-    position: relative;
-    z-index: 2;
-  }
-  
-  
-  
-  .profile-info {
-    color: white;
-    max-width: 500px;
-    text-align: left;
-  }
-  
   .profile-info h1 {
     font-size: 2em;
-    margin-bottom: 10px;
   }
-  
   .profile-info p {
     font-size: 1.2em;
-    margin-bottom: 20px;
   }
-  
-  .social-icons {
-    display: flex;
-    gap: 20px;
-  }
-  
   .social-icons a {
-    color: white;
     font-size: 22px;
-    border:1px solid rgb(28, 161, 250);
-    box-shadow: 0 0 8px rgb(28, 161, 250);
-    border-radius: 100%;
     padding: 9px;
-    transition: color 0.3s ease, transform 0.3s ease;
   }
-  
-  .social-icons a:hover {
-    color: rgb(28, 161, 250); /* or any highlight color */
-    transform: scale(1.2);
+  .profile-container {
+    gap: 110px;
   }
-  
+}
 
-
-  @media (max-width: 768px) {
-
-    /* Profile image itself */
-  .profile-image img {
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
-    border-radius: 40%;
-    /* border: 2px solid rgba(23, 23, 23, 0.1); */
-    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.05); */
-    position: relative;
-    z-index: 2;
+/* Medium screens (992px to 1023px) */
+@media (min-width: 992px) and (max-width: 1023px) {
+  .profile-image {
+    width: 300px;
+    height: 350px;
   }
-    .profile-container {
-      flex-direction: column;
-      gap: 40px; /* smaller gap for mobile */
-    }
-  
-    .profile-info {
-      margin-left: 0; /* remove left margin on mobile */
-      text-align: center;
-    }
-
-    .social-icons {
-      justify-content: center; /* center icons on mobile */
-    }
-
-    .profile-info .position {
-      color: #ffffff;       /* change color */
-      font-size: 1em;    /* make it bold */
-    }
+  .profile-image::before {
+    width: 350px;
+    height: 400px;
+    top: -28px;
+    left: -28px;
   }
+  .profile-image::after {
+    width: 110px;
+    height: 110px;
+    bottom: -28px;
+    right: -45px;
+  }
+  .profile-info h1 {
+    font-size: 1.8em;
+  }
+  .profile-info p {
+    font-size: 1.1em;
+  }
+  .social-icons a {
+    font-size: 20px;
+    padding: 8px;
+  }
+  .profile-container {
+    gap: 100px;
+  }
+}
+
+/* Small-medium screens (769px to 991px) */
+@media (min-width: 769px) and (max-width: 991px) {
+  .profile-image {
+    width: 280px;
+    height: 340px;
+  }
+  .profile-image::before {
+    width: 330px;
+    height: 390px;
+    top: -27px;
+    left: -27px;
+  }
+  .profile-image::after {
+    width: 100px;
+    height: 100px;
+    bottom: -27px;
+    right: -40px;
+  }
+  .profile-info h1 {
+    font-size: 1.7em;
+  }
+  .profile-info p {
+    font-size: 1em;
+  }
+  .social-icons a {
+    font-size: 19px;
+    padding: 7px;
+  }
+  .profile-container {
+    gap: 90px;
+  }
+}
+
+/* Tablet and large mobile (426px to 768px) */
+@media (min-width: 426px) and (max-width: 768px) {
+  .profile-image {
+    width: 230px;
+    height: 280px;
+  }
+  .profile-image::before {
+    width: 270px;
+    height: 320px;
+    top: -22px;
+    left: -22px;
+  }
+  .profile-image::after {
+    width: 80px;
+    height: 80px;
+    bottom: -22px;
+    right: -30px;
+  }
+  .profile-info {
+    max-width: 90%;
+    text-align: center;
+    margin-left: 0;
+  }
+  .profile-info h1 {
+    font-size: 1.4em;
+  }
+  .profile-info p {
+    font-size: 0.9em;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+  .social-icons a {
+    font-size: 17px;
+    padding: 6px;
+  }
+  .profile-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+/* Large mobile (400px to 425px) */
+@media (min-width: 400px) and (max-width: 425px) {
+  .profile-image {
+    width: 210px;
+    height: 260px;
+  }
+  .profile-image::before {
+    width: 250px;
+    height: 300px;
+    top: -20px;
+    left: -20px;
+  }
+  .profile-image::after {
+    width: 70px;
+    height: 70px;
+    bottom: -20px;
+    right: -25px;
+  }
+  .profile-info h1 {
+    font-size: 1.3em;
+  }
+  .profile-info p {
+    font-size: 0.85em;
+  }
+  .social-icons a {
+    font-size: 16px;
+    padding: 5px;
+  }
+}
+
+/* Small mobile (376px to 399px) */
+@media (min-width: 376px) and (max-width: 399px) {
+  .profile-image {
+    width: 190px;
+    height: 240px;
+  }
+  .profile-image::before {
+    width: 230px;
+    height: 280px;
+    top: -18px;
+    left: -18px;
+  }
+  .profile-image::after {
+    width: 65px;
+    height: 65px;
+    bottom: -18px;
+    right: -22px;
+  }
+  .profile-info h1 {
+    font-size: 1.2em;
+  }
+  .profile-info p {
+    font-size: 0.8em;
+  }
+  .social-icons a {
+    font-size: 15px;
+    padding: 5px;
+  }
+}
+
+/* Extra small mobile (320px to 375px) */
+@media (min-width: 320px) and (max-width: 375px) {
+  .profile-image {
+    width: 170px;
+    height: 220px;
+  }
+  .profile-image::before {
+    width: 210px;
+    height: 260px;
+    top: -15px;
+    left: -15px;
+  }
+  .profile-image::after {
+    width: 55px;
+    height: 55px;
+    bottom: -15px;
+    right: -20px;
+  }
+  .profile-info h1 {
+    font-size: 1.1em;
+  }
+  .profile-info p {
+    font-size: 0.75em;
+  }
+  .social-icons a {
+    font-size: 14px;
+    padding: 4px;
+  }
+}
